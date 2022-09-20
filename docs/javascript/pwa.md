@@ -7,10 +7,11 @@
 + 添加到主屏幕(A2HS)
   - https服务
   - head头链接中有正确字段的manifest文件(***.webmanifest)
+    文件中包含name,icons,short_name,display,start_url
   ```
   <link rel="manifest" href="***.webmanifest">
   ```
-  - 有合适的图标展示在主屏幕上
+  - 有合适的图标展示在主屏幕上 > 144*144
   - 该应用程序注册了SW
 + 推送通知
 

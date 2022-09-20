@@ -2,7 +2,7 @@
 ### Notification
 
 ### beforeinstallprompt事件 - 非标准特性
-  - e: propmpt(), platforms, userChoice.then(), outcome
+  - e: prompt(), platforms, userChoice.then(), outcome
 
 ### 异步
   + Promise.then
@@ -26,3 +26,16 @@
   ```
   <link ref="" media=""></link>
   ```
+
+###支持可选链
+1. 安装
+```
+$ npm install --save-dev @babel/plugin-proposal-optional-chaining
+$ npm install --save-dev @babel/plugin-proposal-nullish-coalescing-operator
+```
+2. 在babel.config.js中配置：
+```
+plugins: [
+  '@babel/plugin-proposal-optional-chaining',
+  '@babel/plugin-proposal-nullish-coalescing-operator'
+]
