@@ -1,16 +1,16 @@
 # Webpack
 
-1. "main" - require('webpack')的入口, "bin" - npm scripts中的命令的入口
-2. require.resolve('') - 查询模块的完整路径
-3. magic comment
-  ```
-  import (
-    /* webpackChunkName: "app" */
-    './aa.js').then(res => {
-  })
-  ```
+1. "main" - require('webpack')的入口, "bin" - npm scripts中的命令的入口;
+2. require.resolve('') - 查询模块的完整路径;
+3. magic comment:
+    ```
+    import (
+      /* webpackChunkName: "app" */
+      './aa.js').then(res => {
+    })
+    ```
 
-#
+# 连接本地的webpack，进行调试
 ```
 $ npm install ndb
 $ npm link 本地webpack的仓库副本地址
