@@ -24,7 +24,7 @@
 
 #### 性能优化的策略
 1. 添加speed-measure-webpack-plugin - 定位打包时间比较长的模块
-2. 替换ts-loader // ***从22mim => 19min***
+2. 替换ts-loader // **从22mim => 19min**
   a. vue inspect > output.js // 查看使用ts-loader的rules
   b. vue.config.js
     ```
