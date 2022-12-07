@@ -10,12 +10,12 @@
     })
     ```
 
-# 连接本地的webpack，进行调试
-```
-$ npm install ndb
-$ npm link 本地webpack的仓库副本地址
-$ ndb npx webpack
-
+### 连接本地的webpack，进行调试
+    ```
+    $ npm install ndb
+    $ npm link 本地webpack的仓库副本地址
+    $ ndb npx webpack
+    ```
 ### 性能分析
 #### 插件
   1. webpack-bundle-analyzer - 打包大小
