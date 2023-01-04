@@ -5,3 +5,7 @@
 + document
   - document.currentScript
   - document.head
++ window
+  - getBoundingClientRect
+  - getComputedStyle
+  -
