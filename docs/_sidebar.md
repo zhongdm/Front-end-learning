@@ -25,6 +25,9 @@
   + taro
   +
 
+* **已经发布的Library**
+  + [vue library](Library/vue.md)
+
 * **相关资料**
   + [前端技术栈](前端技术栈.md)
   + [常用网站收集](常用网站收集.md)
