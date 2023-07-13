@@ -7,6 +7,11 @@
   $ docsify serve docs
   ```
 
+# 部署
+  ```
+  
+  ```
+
 # 访问地址
 [线上地址](https://zhongdm.github.io/Front-end-learning/#/)
 #

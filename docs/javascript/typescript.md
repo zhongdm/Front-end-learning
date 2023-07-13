@@ -20,3 +20,8 @@
   + @this
   + @extends
   + @enum
+
+3. Property
++ references: Array
+  - composite
+  - declaration

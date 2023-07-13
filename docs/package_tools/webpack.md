@@ -1,5 +1,4 @@
 # Webpack
-
 1. "main" - require('webpack')的入口, "bin" - npm scripts中的命令的入口;
 2. require.resolve('') - 查询模块的完整路径;
 3. magic comment:
@@ -9,7 +8,11 @@
       './aa.js').then(res => {
     })
     ```
-
+## webpack 3
+1. 
+  + vendor - 打包的node_modules,也就是一些以来文件的打包
+  + vendor - 
+  + app - 
 ### 连接本地的webpack，进行调试
     ```
     $ npm install ndb

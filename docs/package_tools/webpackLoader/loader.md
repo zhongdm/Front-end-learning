@@ -1,0 +1,1 @@
+1. this.query - rules中配置的loader的options属性

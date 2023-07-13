@@ -43,9 +43,9 @@
   + 表单: formik + yup 
   + *** - 表格
   + react hooks
-    + useState
-    + useEffect
-    + useContext
+    * useState
+    * useEffect
+    * useContext
     + useCallback - 保存函数，减少渲染次数，加快渲染效率
     + useMomo - 保存计算后的数据，减少渲染次数，加快渲染效率
     + 自定义hook
@@ -59,16 +59,49 @@
   + mobx
 
 ## Hook
-  + useState
-  + useEffect
-  + useContext
-  + useReducer
-  + useCallback
-  + useMemo
-  + useRef
-  + useImperativeHandle
-  + useLayoutEffect
-  + useDebugValue
+  - [x] **useState** - state
+    ```
+    const [name, setName] = useState(initValue)
+    ```
+  + [x] **useEffect** - 尽量不使用effect，低效并且复杂
+    ```
+    可看作以下三个生命周期的组合
+    componentDidMount
+    componentDidUpdate
+    componentWillUnMount
+
+    useEffect(() => {
+      // logic
+      return () => {
+        // callback
+      }
+    }, params)
+    params - 可防止无限循环
+    ```
+  + [x] **useContext** - 读取和订阅组件中的context
+    可用户在组件 **深度** 读取外部数据
+    ```
+      const SomeContext = createContext(variant)
+      const context = useContext(SomeContext)
+    ```
+  + [ ] useReducer
+  + [ ] useCallback
+    array变量的变化，会触发fn函数的执行
+    ```
+    const backFn = useCallback(fn, array)
+    ```
+  + [ ] useMemo - 缓存大体量的数据 - 性能优化 - 比如较大的数据量等
+    仅适用于纯函数场景
+  + [ ] useRef - 不要在渲染期间读取或写入ref数据
+    ```
+    useRef(value).current - 最好在useEffect中改变值，否则会引起无限循环
+    ```
+  + [ ] useImperativeHandle
+  + [ ] useLayoutEffect
+  + [ ] useDebugValue
+  + [ ] useSyncExternalStore
+  + [ ] useId - 生成唯一id
+  + [ ] 
   + 自定义hook
 
 ## 内部组件
@@ -88,7 +121,7 @@
 ## 其他
 + http://httpbin.org/ - 测试axios请求
 
-### React项目组成
+  ### React项目组成
 + react
 + react-dom
 + react-router && react-router-dom && useNavigate 
@@ -124,3 +157,19 @@
             try{}catch(err){}
           }
     ```
+
+## 启动装饰器
+1. 安装babel插件
+```bash
+$ npm install @babel/plugin-proposal-decorators
+```
+package.json中的配置：
+```
+"babel": {
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators": {"legacy": true}
+    ]
+  ]
+}
+```
