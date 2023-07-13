@@ -8,7 +8,8 @@
       - async： 下载不会阻塞解析渲染，执行会阻塞解析渲染
     + 提早连接 - preconnect / dns-prefetch
     + 延迟加载
-    ![script async](/Users/meimei/Documents/miyazdm.github.io/Front-end-learning/docs/img/script_async.webp)
+    ![script async](../img/script_async.webp)
+    <image src="../img/script_async.webp"/>
   4. 
     + html - minify + compress + cache
     + css - render blocing - add "media" attribute
