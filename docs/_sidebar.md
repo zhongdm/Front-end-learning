@@ -14,6 +14,7 @@
 * **前端工程化**
   + [Webpack](package_tools/webpack)
   + [Webpack核心源码分析](package_tools/Webpack核心源码分析)
+  + [Rollup](package_tools/rollup)
 * **三大主流框架/库**
   + Vue
     - [Vue2.0]()
@@ -24,6 +25,9 @@
   + uni-app
   + taro
   +
+
+* **性能优化**
+  + [Web performance](javascript/web_performance.md)
 
 * **已经发布的Library**
   + [vue library](Library/vue.md)
